@@ -57,3 +57,8 @@ const createPaletteItems = () => {
 
 createPaletteItems();
 refs.colorPalette.addEventListener("click", selectColor);
+
+const randomColor = () =>
+	Math.round(Math.random() * 256)
+		.toString(16)
+		.padStart(2, "0");
