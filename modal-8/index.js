@@ -62,3 +62,7 @@ console.log(them);
 const saveSattings = localStorage.getItem("settings");
 const parsedSettings = JSON.parse(saveSattings);
 console.log(parsedSettings);
+
+console.log(JSON.stringify("Well, this is awkward")); // UNDEFINED
+
+console.log(JSON.parse("Well, this is awkward")); // ERROR
