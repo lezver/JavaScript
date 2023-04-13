@@ -8,14 +8,15 @@ let timeOutId = null;
 
 const showNotification = () => {
 	refs.info.classList.add("is-visible");
+
 	timeOutId = setTimeout(() => {
-		console.log("not work");
 		hideNotification();
 	}, NOTIFICATION_DELAY);
 };
 
 const hideNotification = () => {
 	refs.info.classList.remove("is-visible");
+
 	clearTimeout(timeOutId);
 };
 

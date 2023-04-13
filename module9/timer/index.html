@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Timer</title>
+		<style>
+			.timer {
+				background-color: tomato;
+				padding: 25px;
+				border-radius: 10px;
+				width: fit-content;
+				margin: 0 auto;
+			}
+			.clock-face {
+				text-align: center;
+				font-size: 50px;
+				color: brown;
+			}
+			.actions {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 15px;
+			}
+			button {
+				text-transform: uppercase;
+				padding: 7px 14px;
+				border-radius: 10px;
+				background-color: brown;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="timer">
+			<p class="clock-face"></p>
+			<div class="actions">
+				<button class="start-btn" type="button">Start</button>
+				<button class="stop-btn" type="button">Stop</button>
+				<button class="reset-btn" type="button">Reset</button>
+			</div>
+		</div>
+		<script src="./index.js" type="module"></script>
+	</body>
+</html>

@@ -12,24 +12,22 @@
 				padding: 25px;
 				border-radius: 5px;
 				background-color: rgba(128, 255, 0, 0.553);
-				opacity: 0;
 				transition: opacity 250ms linear;
 				cursor: pointer;
+				opacity: 0;
 			}
 			.is-visible {
 				opacity: 1;
 			}
+			.btn {
+				padding: 5px 15px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
 		</style>
 	</head>
 	<body>
-		<button
-			class="btn"
-			type="button"
-				cursor: pointer;
-			style="padding: 5px 15px; border-radius: 5px;cursor: pointer;"
-		>
-			click me
-		</button>
+		<button class="btn" type="button">click me</button>
 		<p class="notification-info">Operation was successfully!</p>
 		<script src="./index.js" type="module"></script>
 	</body>
