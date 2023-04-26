@@ -21,3 +21,19 @@ promise
 	});
 
 //  //////////////////
+
+const makePromise = () => {
+	return new Promise((resolve, reject) => {
+		const halfOfChange = Math.random() > 0.5;
+		if (halfOfChange) resolve("yes");
+		reject("no");
+	});
+};
+
+makePromise()
+	.then((result) => {
+		console.log(result);
+	})
+	.catch((error) => {
+		console.log(error);
+	});

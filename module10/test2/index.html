@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				margin: 16px;
+				line-height: 1.5;
+				color: #212121;
+				font-family: sans-serif;
+			}
+
+			p {
+				margin: 0;
+			}
+
+			.user-list {
+				margin: 0;
+				list-style: none;
+				padding: 24px;
+			}
+
+			.user-list li:not(:last-child) {
+				margin-bottom: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<button type="button" class="btn">Fetch users</button>
+		<ul class="user-list"></ul>
+		<script src="./index.js" type="module"></script>
+	</body>
+</html>

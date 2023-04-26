@@ -254,3 +254,8 @@ const makeGreetingUpdate = (guestName) => {
 makeGreetingUpdate("Ajax")
 	.then((greeting) => console.log(greeting))
 	.catch((error) => console.log(error));
+
+console.log(Date.now());
+console.log(new Date());
+
+console.log(new Date("2030-05-17") - new Date("2030-04-23"));

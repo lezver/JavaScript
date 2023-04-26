@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fetch-API</title>
+		<style>
+			.form {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				width: fit-content;
+				margin: 50px auto;
+				padding: 15px;
+				background-color: rgba(127, 255, 212, 0.526);
+				border-radius: 8px;
+			}
+			.form > label {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+			.form > label > input {
+				border-radius: 8px;
+				padding: 5px;
+				font-size: 16px;
+				outline: none;
+				background-color: rgba(240, 248, 255, 0.506);
+			}
+			.btn {
+				height: fit-content;
+				width: fit-content;
+				padding: 5px 15px;
+				font-size: 16px;
+				border-radius: 8px;
+			}
+			.items-api {
+				width: fit-content;
+				list-style: none;
+				padding: 0;
+				margin: 0 auto;
+			}
+			.items-api > li {
+				padding: 15px;
+				border-radius: 8px;
+				background-color: rgba(95, 158, 160, 0.49);
+			}
+			.items-api > li > picture {
+				display: block;
+			}
+			.items-api > li > picture > img {
+				display: block;
+				max-width: 100%;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<form class="form" data-form>
+			<label>
+				Input the number:
+				<input type="text" data-input />
+			</label>
+			<button class="btn" type="submit" data-search>Search</button>
+		</form>
+		<ul class="items-api" data-items></ul>
+
+		<script src="./index.js" type="module"></script>
+	</body>
+</html>
+
+<!-- <li>
+	<picture>
+		<img src="" alt="" />
+	</picture>
+	<div class="card-body">
+		<h2>Name:</h2>
+		<p>Weight:</p>
+		<p>Height:</p>
+	</div>
+</li> -->
