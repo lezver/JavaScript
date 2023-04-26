@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pagination</title>
+		<style>
+			img {
+				display: block;
+				max-width: 100%;
+				margin: 0 auto;
+			}
+			button {
+				cursor: pointer;
+			}
+			.form {
+				display: flex;
+				align-items: center;
+				gap: 25px;
+				background-color: rgba(127, 255, 212, 0.513);
+				width: fit-content;
+				padding: 15px;
+				border-radius: 8px;
+				margin: 50px auto;
+			}
+			.form > label {
+				display: flex;
+				gap: 10px;
+				flex-direction: column;
+				font-size: 16px;
+			}
+			.search-text {
+				padding: 5px 10px;
+				border-radius: 5px;
+				border: none;
+				outline: none;
+				font-size: 16px;
+				background-color: rgba(42, 86, 101, 0.259);
+			}
+			.search-btn {
+				height: fit-content;
+				width: fit-content;
+				padding: 15px;
+				font-size: 16px;
+				border-radius: 8px;
+				background-color: rgba(100, 148, 237, 0.498);
+			}
+			.items {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 15px;
+				width: fit-content;
+				margin: 0 auto;
+				list-style: none;
+				padding: 0;
+			}
+			.items > li {
+				width: 90%;
+				background-color: beige;
+				padding: 15px;
+				border-radius: 10px;
+				margin-bottom: 15px;
+			}
+			.more-btn {
+				margin: 0 auto;
+				display: block;
+				height: fit-content;
+				width: fit-content;
+				padding: 15px;
+				font-size: 16px;
+				border-radius: 8px;
+				background-color: rgba(100, 148, 237, 0.498);
+			}
+		</style>
+	</head>
+	<body>
+		<form class="form" data-form>
+			<label>
+				Search something ...
+				<input class="search-text" type="text" data-search-text />
+			</label>
+			<button class="search-btn" type="submit" data-search-btn>Search</button>
+		</form>
+		<ul class="items" data-items></ul>
+		<button class="more-btn" type="button" data-more-btn>Load more</button>
+		<script src="./index.js" type="module"></script>
+	</body>
+</html>
