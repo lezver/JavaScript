@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FetchUsers</title>
+		<style>
+			.btn {
+				display: block;
+				margin: 50px auto;
+				padding: 15px 25px;
+				font-size: 16px;
+				border-radius: 10px;
+			}
+			.user-list {
+				width: fit-content;
+				list-style: none;
+				margin: 0 auto;
+				padding: 0;
+			}
+			.user-list li:not(:last-child) {
+				margin-bottom: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<button class="btn" type="button" data-fetch-users>Fetch Users</button>
+		<ul class="user-list" data-user-list></ul>
+
+		<script src="./index.js" type="module"></script>
+	</body>
+</html>
